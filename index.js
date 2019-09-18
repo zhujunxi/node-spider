@@ -17,6 +17,7 @@ function getOneContent() {
             let selectItem = $("#main-container .tab-content")[0];
 
             let data = {
+                id:target,
                 imgUrl: $(selectItem).find('.one-imagen img').attr("src"),
                 tag: $(selectItem).find('.one-imagen-footer .one-imagen-leyenda').text().replace(/(^\s*)|(s*$)/g,""),
                 content:$(selectItem).find('.one-cita-wrapper .one-cita').text().replace(/(^\s*)|(\s*$)/g, "")
