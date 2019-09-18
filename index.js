@@ -19,7 +19,7 @@ function getOneContent() {
             let data = {
                 id:target,
                 imgUrl: $(selectItem).find('.one-imagen img').attr("src"),
-                tag: $(selectItem).find('.one-imagen-footer .one-imagen-leyenda').text().replace(/(^\s*)|(s*$)/g,""),
+                tag: $(selectItem).find('.one-imagen-footer .one-imagen-leyenda').text().replace(/(^\s*)|(\s*$)/g,""),
                 content:$(selectItem).find('.one-cita-wrapper .one-cita').text().replace(/(^\s*)|(\s*$)/g, "")
             }
 
